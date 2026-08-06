@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
   </head>
   <body>
     <div class="noise"></div>
     <header class="site-header">
       <a class="brand" href="index.html" aria-label="Daniel the Designer home"><span>Daniel<br>the Designer</span><small>Daniel Ruben / IN</small></a>
       <nav class="main-nav" aria-label="Main navigation"><a class="active" href="index.html">Index</a><a href="services.html">Services</a><a href="contact.html">Contact</a></nav>
-      <div class="header-actions"><a class="button button-quiet" href="#">Résumé <span>↓</span></a><a class="button" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      <div class="header-actions"><a class="button button-quiet" href="assets/resume/Daniel-Ruben-Resume.pdf" target="_blank" rel="noreferrer">Résumé <span>↓</span></a><a class="button" href="https://linkedin.com/in/daniel-peniel-jeba-rueben-ramesh" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
     </header>
 
     <main>
@@ -42,20 +43,19 @@
       <section class="work-section canvas-section" id="work">
         <div class="section-head"><div><span class="index-no">01</span><h2>Showreel<br>in motion.</h2></div><p>Short-form stories engineered to stop<br>the scroll and move the metric.</p></div>
         <div class="connector horiz"></div>
-        <div class="reel-grid">
-          <article class="reel-card reel-a reveal"><span class="card-no">01—06</span><div class="play">▶</div><div class="reel-info"><b>Founder POV</b><small>LinkedIn / +380% reach</small></div></article>
-          <article class="reel-card reel-b reveal"><span class="card-no">02—06</span><div class="play">▶</div><div class="reel-info"><b>Product in 30</b><small>SaaS / Launch film</small></div></article>
-          <article class="reel-card reel-c reveal"><span class="card-no">03—06</span><div class="play">▶</div><div class="reel-info"><b>Built Different</b><small>Culture / Recruitment</small></div></article>
-          <article class="reel-card reel-d reveal"><span class="card-no">04—06</span><div class="play">▶</div><div class="reel-info"><b>The Big Idea</b><small>Campaign / Social</small></div></article>
-          <article class="reel-card reel-e reveal"><span class="card-no">05—06</span><div class="play">▶</div><div class="reel-info"><b>Human + AI</b><small>Brand / Motion</small></div></article>
-          <article class="reel-card reel-f reveal"><span class="card-no">06—06</span><div class="play">▶</div><div class="reel-info"><b>Make the Shift</b><small>Event / Recap</small></div></article>
+        <div class="reel-grid reel-grid-live">
+          <article class="reel-card reveal" tabindex="0" role="button" aria-label="Play Founder POV showreel"><video preload="metadata" muted loop playsinline src="assets/videos/founder-story.mp4"></video><span class="card-no">01—05</span><div class="play">▶</div><div class="reel-info"><b>Founder POV</b><small>LinkedIn / +380% reach</small></div></article>
+          <article class="reel-card reveal" tabindex="0" role="button" aria-label="Play Product in 30 showreel"><video preload="metadata" muted loop playsinline src="assets/videos/product-launch.mp4"></video><span class="card-no">02—05</span><div class="play">▶</div><div class="reel-info"><b>Product in 30</b><small>SaaS / Launch film</small></div></article>
+          <article class="reel-card reveal" tabindex="0" role="button" aria-label="Play finance showreel one"><video preload="metadata" muted loop playsinline src="assets/videos/finance-reel-01.mp4"></video><span class="card-no">03—05</span><div class="play">▶</div><div class="reel-info"><b>Built Different</b><small>Finance / Short-form reel</small></div></article>
+          <article class="reel-card reveal" tabindex="0" role="button" aria-label="Play finance showreel two"><video preload="metadata" muted loop playsinline src="assets/videos/finance-reel-02.mp4"></video><span class="card-no">04—05</span><div class="play">▶</div><div class="reel-info"><b>The Big Idea</b><small>Finance / Short-form reel</small></div></article>
+          <article class="reel-card reveal" tabindex="0" role="button" aria-label="Play finance showreel three"><video preload="metadata" muted loop playsinline src="assets/videos/finance-reel-03.mp4"></video><span class="card-no">05—05</span><div class="play">▶</div><div class="reel-info"><b>Human + AI</b><small>Finance / Short-form reel</small></div></article>
         </div>
       </section>
 
       <section class="case-study canvas-section">
         <div class="section-label">[ 02 / UI-UX PROJECTS ] <span>FIGMA-LINKED CASE STUDIES</span></div>
         <div class="project-grid">
-          <a href="https://www.figma.com" target="_blank" rel="noreferrer" class="project project-1 reveal"><div class="project-visual"><span class="mini-ui mini-one"></span><span class="mini-ui mini-two"></span><span class="mini-ui mini-three"></span></div><div><small>FINTECH / PRODUCT DESIGN</small><h3>Pulse Wallet</h3><p>Made money movement feel calm.</p></div><b>View in Figma ↗</b></a>
+          <a href="https://www.figma.com/design/JzCC8eoLl7RWtNbpigqJcB/UX-Daniel-Portfolio?node-id=49-69&amp;t=J0IfsSTci8pRraRZ-1" target="_blank" rel="noreferrer" class="project project-1 reveal"><div class="project-visual"><span class="mini-ui mini-one"></span><span class="mini-ui mini-two"></span><span class="mini-ui mini-three"></span></div><div><small>FINTECH / PRODUCT DESIGN</small><h3>Pulse Wallet</h3><p>Made money movement feel calm.</p></div><b>View in Figma ↗</b></a>
           <a href="https://www.figma.com" target="_blank" rel="noreferrer" class="project project-2 reveal"><div class="project-visual dark-ui"><span class="dash-title"></span><span class="dash-chart"></span><span class="dash-list"></span></div><div><small>SAAS / WEB APP</small><h3>Venture OS</h3><p>A clearer path from data to decision.</p></div><b>View in Figma ↗</b></a>
         </div>
       </section>
@@ -76,7 +76,7 @@
       <section class="testimonials canvas-section"><div class="section-label">[ SIGNAL RECEIVED / CLIENT NOTES ]</div><div class="quote-grid"><blockquote>“Daniel took a complicated story and made it <em>impossible to scroll past.</em>”<footer>— Founder, B2B SaaS</footer></blockquote><blockquote>“Fast enough for a startup. Thoughtful enough for a brand that matters.”<footer>— Marketing Lead, Venture Studio</footer></blockquote></div></section>
       <section class="final-cta canvas-section"><span class="annotation">[ OPEN CHANNEL / 2025 ]</span><h2>Let's build<br>your <em>system.</em></h2><a href="contact.html" class="button button-accent">Book a call <span>↗</span></a><div class="cta-ring"></div></section>
     </main>
-    <footer><a class="brand" href="index.html"><span>Daniel<br>the Designer</span><small>Daniel Ruben / IN</small></a><div><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="https://www.linkedin.com">LinkedIn ↗</a></div><p>© 2025 Daniel Ruben<br>Built with intent.</p></footer>
+    <footer><a class="brand" href="index.html"><span>Daniel<br>the Designer</span><small>Daniel Ruben / IN</small></a><div><a href="services.html">Services</a><a href="contact.html">Contact</a><a href="https://linkedin.com/in/daniel-peniel-jeba-rueben-ramesh" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://www.instagram.com/danielruben220/" target="_blank" rel="noreferrer">Instagram ↗</a></div><p>© 2025 Daniel Ruben<br>Built with intent.</p></footer>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,9 @@
+/* Live showreel media */
+.reel-grid-live{grid-template-columns:repeat(5,1fr)}
+.reel-card{background:#202024}
+.reel-card:focus-visible{transform:translateY(-9px);box-shadow:5px 6px 0 var(--orange);outline:none}
+.reel-card:before{z-index:1;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent 63%)}
+.reel-card>*{z-index:2}
+.reel-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+@media(max-width:800px){.reel-grid-live{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:440px){.reel-grid-live{grid-template-columns:repeat(2,1fr)}}
