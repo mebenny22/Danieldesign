@@ -85,3 +85,20 @@
         transform: translateX(-50%);
     }
 }
+.hero-canvas-section {
+    position: relative;
+}
+
+.hero-image {
+    position: absolute;
+    right: 8%;
+    top: 140px;
+    width: 450px;
+    z-index: 2;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
