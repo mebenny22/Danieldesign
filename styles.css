@@ -263,7 +263,7 @@ h1 em {
     align-self: end;
     z-index: 1;
 
-    max-width: 520px;
+    max-width: 620px;
 
     margin-bottom: 4vw;
 
@@ -271,14 +271,39 @@ h1 em {
     padding-right:0px;
 
 }
-
-.hero-copy p {
-    font-size: 22px;
-    line-height: 1.2;
-    margin: 0 0 30px;
-    letter-spacing: -.04em
+.hero-heading{
+    margin-bottom:28px;
 }
 
+.hero-tag{
+    display:inline-block;
+    font-size:12px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#ff6432;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero-copy h1{
+    font-size:74px;
+    line-height:0.95;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.hero-copy h1 span{
+    color:#ff6432;
+}
+
+
+.hero-copy p{
+    font-size:24px;
+    line-height:1.5;
+    max-width:520px;
+    margin-bottom:36px;
+    color:#222;
+}
 .hero-copy strong {
     font-weight: 500;
     color: var(--orange)
@@ -1930,4 +1955,26 @@ footer p {
 .linkedin-icon {
     width: 16px;
     height: 16px;
+}
+.hero-heading{
+
+    margin-bottom:28px;
+
+}
+.hero-tag{
+
+    display:inline-block;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:#ff6432;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
 }
