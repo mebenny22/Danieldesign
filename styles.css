@@ -268,7 +268,7 @@ h1 em {
     margin-bottom: 4vw;
 
     margin-top: 80px;
-    padding-right:120px;
+    padding-right:0px;
 
 }
 
@@ -1781,7 +1781,7 @@ footer p {
 
     position:absolute;
 
-    right:2%;
+    right: -30px;
 
     bottom:0;
 
@@ -1804,7 +1804,7 @@ footer p {
     left:50%;
     transform:translateX(-50%);
 
-    width:520px;      /* Increase this */
+    width:480px;      /* Increase this */
     max-width:none;
 
     height:auto;
@@ -1881,4 +1881,53 @@ footer p {
 
     margin-right: 8px;
 
+}
+.whatsapp-btn{
+
+    background:#25D366;
+
+    color:#ffffff;
+
+    border:none;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    transition:.25s;
+
+}
+
+.whatsapp-btn:hover{
+
+    background:#1ea952;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(37,211,102,.25);
+
+}
+
+.whatsapp-icon{
+
+    width:18px;
+
+    height:18px;
+
+}
+.linkedin-btn {
+    background: #0A66C2;
+    color: white;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.linkedin-icon {
+    width: 16px;
+    height: 16px;
 }
