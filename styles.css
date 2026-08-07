@@ -48,3 +48,40 @@
     border:1px solid #ff6b35;
     box-shadow:0 12px 30px rgba(255,107,53,.18);
 }
+.trusted-brands {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.brand-track {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    width: max-content;
+    animation: marquee 25s linear infinite;
+}
+
+.brand-track img {
+    height: 50px;
+    width: auto;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.brand-track img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
