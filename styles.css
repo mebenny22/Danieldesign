@@ -140,6 +140,52 @@ textarea {
     border-color: var(--ink)
 }
 
+.linkedin-btn {
+    border: 1px solid var(--ink);
+    background: transparent;
+    color: var(--ink);
+    padding: 10px 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font: 11px var(--mono);
+    text-transform: uppercase;
+    transition: .2s ease;
+}
+
+.linkedin-btn:hover {
+    background: var(--ink);
+    color: var(--paper);
+}
+
+.whatsapp-btn {
+    background: #25D366;
+    border: 1px solid #25D366;
+    color: #ffffff;
+    padding: 10px 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font: 11px var(--mono);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .2s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #1eb954;
+    border-color: #1eb954;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.nav-icon {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    object-fit: contain;
+}
+
 .canvas-section {
     position: relative;
     padding-left: 7.6vw;
