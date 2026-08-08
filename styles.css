@@ -1290,13 +1290,73 @@ footer p {
 
 .reveal {
     opacity: 0;
-    transform: translateY(18px);
-    transition: opacity .55s ease, transform .55s ease
+    transform: translateY(22px);
+    transition: opacity .65s cubic-bezier(0.16, 1, 0.3, 1), transform .65s cubic-bezier(0.16, 1, 0.3, 1)
 }
 
 .reveal.is-visible {
     opacity: 1;
     transform: none
+}
+
+/* Top Scroll Progress Line */
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--orange), #ff9e66);
+    width: 0%;
+    z-index: 100;
+    transition: width 0.1s ease-out;
+}
+
+/* Background Particle Canvas */
+#ambient-particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.65;
+}
+
+.section-head h2 em,
+.canvas-section h2 em,
+.contact-heading h1 em,
+.page-intro h1 em {
+    display: inline-block;
+    color: var(--orange);
+    transition: transform 0.4s ease, color 0.4s ease;
+}
+
+.section-head h2 em:hover,
+.canvas-section h2 em:hover {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.reel-card,
+.project,
+.poster,
+.service-node,
+.article-grid article,
+.quote-grid blockquote {
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+    will-change: transform;
+}
+
+.reel-card:hover,
+.project:hover,
+.poster:hover {
+    box-shadow: 0 16px 36px rgba(255, 107, 53, 0.20);
+    border-color: var(--orange);
+}
+
+.quote-grid blockquote.is-visible {
+    border-color: rgba(255, 107, 53, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 107, 53, 0.08);
 }
 
 /* services */
@@ -2010,4 +2070,92 @@ footer p {
     .hero-card-1, .hero-card-3 {
         right: 0;
     }
+}
+
+/* ===========================
+   VISUAL DESIGNER HOVER INTERACTIONS
+=========================== */
+
+/* Button Hover Dynamic Ripple & Magnetic Lift */
+.button,
+.whatsapp-btn,
+.linkedin-btn {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.button:hover,
+.whatsapp-btn:hover,
+.linkedin-btn:hover {
+    transform: translateY(-3px);
+}
+
+.button-accent:hover {
+    box-shadow: 0 12px 28px rgba(255, 107, 53, 0.35);
+}
+
+.whatsapp-btn:hover {
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.35);
+}
+
+.linkedin-btn:hover {
+    box-shadow: 0 12px 28px rgba(22, 22, 22, 0.25);
+}
+
+/* Nav Link Hover Underline Draw Effect */
+.main-nav a {
+    position: relative;
+    padding: 5px 0;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--orange);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.main-nav a:hover::after,
+.main-nav a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+/* Project Card Hover Interactive Spotlight */
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project:hover b {
+    color: var(--orange);
+    transform: translateX(4px);
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+/* Reel Card Hover Play Pulse */
+.reel-card .play {
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reel-card:hover .play {
+    background: var(--orange);
+    border-color: var(--orange);
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.6);
+}
+
+/* Poster Card Interactive Hover Shift */
+.poster {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.poster:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.15);
 }
