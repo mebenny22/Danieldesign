@@ -179,11 +179,21 @@ textarea {
     transform: translateY(-1px);
 }
 
-.nav-icon {
-    width: 15px;
-    height: 15px;
-    display: inline-block;
-    object-fit: contain;
+.nav-icon,
+.whatsapp-icon,
+.linkedin-icon,
+.button img,
+.whatsapp-btn img,
+.linkedin-btn img {
+    width: 15px !important;
+    height: 15px !important;
+    max-width: 15px !important;
+    max-height: 15px !important;
+    min-width: 15px !important;
+    min-height: 15px !important;
+    display: inline-block !important;
+    object-fit: contain !important;
+    flex-shrink: 0 !important;
 }
 
 .canvas-section {
@@ -389,6 +399,47 @@ textarea {
     z-index: 2;
 }
 
+/* ===========================
+   HERO FLOATING ANIMATIONS
+=========================== */
+@keyframes floatY {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(0.6deg);
+    }
+}
+
+@keyframes floatYAlt {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(-0.6deg);
+    }
+}
+
+@keyframes pulseGlow {
+    0%, 100% {
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    }
+    50% {
+        box-shadow: 0 14px 32px rgba(255, 107, 53, 0.22);
+    }
+}
+
+@keyframes circleBreathe {
+    0%, 100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.85;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.03);
+        opacity: 0.95;
+    }
+}
+
 .hero-circle {
     position: absolute;
     width: 420px;
@@ -401,6 +452,7 @@ textarea {
     opacity: 0.85;
     pointer-events: none;
     z-index: 1;
+    animation: circleBreathe 8s ease-in-out infinite;
 }
 
 .hero-card {
@@ -413,6 +465,15 @@ textarea {
     z-index: 4;
     white-space: nowrap;
     font-family: var(--sans);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.hero-card:hover {
+    animation-play-state: paused !important;
+    transform: translateY(-8px) scale(1.04) !important;
+    box-shadow: 0 16px 36px rgba(255, 107, 53, 0.28) !important;
+    cursor: pointer;
 }
 
 .hero-card-1 {
@@ -421,6 +482,7 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 2px;
+    animation: floatY 5.8s ease-in-out infinite, pulseGlow 5.8s ease-in-out infinite;
 }
 
 .hero-card-1 .card-title {
@@ -457,6 +519,7 @@ textarea {
     display: flex;
     align-items: center;
     gap: 6px;
+    animation: floatYAlt 6.8s ease-in-out infinite 1s, pulseGlow 6.8s ease-in-out infinite 1s;
 }
 
 .hero-card-2 span {
@@ -473,6 +536,7 @@ textarea {
     display: flex;
     align-items: center;
     gap: 6px;
+    animation: floatY 6.2s ease-in-out infinite 0.5s, pulseGlow 6.2s ease-in-out infinite 0.5s;
 }
 
 .crosshair {
